@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:selectableItemBackground">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/default_user_input"
+        android:minHeight="200px"
+        android:padding="20px"
+        android:id="@+id/user_input"
+        android:textSize="40sp"
+        android:gravity="end"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150px"
+        android:padding="20px"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/default_result"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:id="@+id/answer"
+        android:layout_gravity="center_horizontal" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:numColumns="4"
+        android:background="@color/grid_color"
+        android:id="@+id/grid"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
