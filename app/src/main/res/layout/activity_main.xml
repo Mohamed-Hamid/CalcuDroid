@@ -4,29 +4,45 @@
     android:layout_height="match_parent"
     android:background="?android:selectableItemBackground">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/default_user_input"
-        android:minHeight="200px"
-        android:padding="20px"
-        android:id="@+id/user_input"
-        android:textSize="40sp"
-        android:gravity="end"
-        android:layout_gravity="center_horizontal" />
 
+
+    <HorizontalScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hsv"
+        android:layout_gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/default_user_input"
+            android:textColor="@android:color/secondary_text_light"
+            android:minHeight="200px"
+            android:scrollHorizontally="true"
+            android:id="@+id/user_input"
+            android:textSize="50sp"
+            android:maxLines="1"
+            android:gravity="end"
+            android:layout_gravity="end" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hsv2"
+        android:layout_gravity="end">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:minHeight="150px"
+        android:textColor="@android:color/black"
         android:padding="20px"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/default_result"
         android:textSize="30sp"
         android:gravity="end"
+        android:scrollHorizontally="true"
         android:id="@+id/answer"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="end" />
+    </HorizontalScrollView>
 
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
